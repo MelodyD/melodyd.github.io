@@ -1,0 +1,39 @@
+body{
+    height: 100%;
+    font-family: "Microsoft YaHei";
+}
+.container{
+    pandding:20px;
+    min-width: 50em;
+    background-color: #eee;
+    overflow: auto;
+    border: 1px solid #999;
+}
+ .team{
+    width: 200px;
+     height: auto;
+    margin: 20px;
+    float: left;
+    border: 1px solid #999;
+}
+ .personal{
+    width: 120px;
+    height: auto;
+    margin: 20px;
+    float: right;
+    border: 1px solid #999;
+}
+ .article{
+    height: auto;
+    width: auto;
+    padding: 20px;
+     margin: 20px 160px 20px 240px;
+    border: 1px solid #999;
+}
+ .team_logo{
+     float: left;
+ }
+ .personal_logo{
+margin: 20px 20px ;
+     display: block;
+ }
