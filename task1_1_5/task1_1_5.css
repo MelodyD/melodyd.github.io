@@ -2,26 +2,47 @@
 
 html,body{
     width: 100% ;
-    overflow: auto;
     margin: 0;
     padding: 0;
 }
 body{
     background-color: lightgray;
-    width: 100%;
     font-family:"Microsoft YaHei";
 }
-div{
+.container{
+    background-color: #ddd;
+    overflow: auto;
+    position: absolute;
+
+}
+.left_content div{
     background-color: white;
     border-bottom: gray solid;
     border-right: gray solid;
-    margin: 1em;
     padding: 1em;
+    margin: 20px;
+}
+.right_content div{
+    background-color: white;
+    border-bottom: gray solid;
+    border-right: gray solid;
+    padding: 1em;
+    margin: 20px;
+}
+.left_content{
+    float: left;
+    margin-right: 400px;
+    min-width: 400px;
+}
+.right_content{
+    width: 400px;
+    position: absolute;
+    right: 10px;
 }
 header{
     width: 100%;
     background-color: white;
-    position: fixed;
+    overflow: auto;
 }
 header img{
     float: left;
@@ -49,7 +70,7 @@ h3{
     color: darkgray;
 }
 .article{
-
+    margin-top: 5em;
 }
 .article ul{
     list-style: none;
@@ -77,32 +98,33 @@ h3{
 .sum{
     background-color: lightgray;
 }
- #pictures .gallery{
-    border: solid darkgray;
-    margin: 1em;
-     float: left;
-     clear: both;
-
+#pictures{
+    overflow: auto;
 }
- #pictures .clear{
-     clear: both;
-     border: none;
+ #pictures .gallery{
+
+     border: 2px solid darkgray;
+     float: left;
+     padding: 1em;
+     margin: 1em;
+}
+ #pictures img{
+     max-width: 200px;
+     max-height: 200px;
+     width: auto;
  }
 
 .form th,td{
     border:none;
     padding: 5px;
+    font-size: 13px;
 }
 .form .info{
     text-align: right;
-    width: 30em;
-}
-.form .input{
     width: 70em;
 }
-.form .text_area{
-    width: 80%;
-    height: 4em;
+.form .input{
+    width: 60em;
 }
 .form .remind{
     color: gray;

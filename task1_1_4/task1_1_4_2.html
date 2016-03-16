@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+        html{height: 100%;
+        overflow: hidden;}
+        body{
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 0px;
+            height:0px;
+        }
+        .rectangle{
+            position: absolute;
+            width: 400px;
+            height: 200px;
+            margin: -100px -200px -100px -200px;
+            background: #ccc;
+            overflow: hidden;
+        }
+        .top_circle,.bottom_circle{
+            width: 100px;
+            height: 100px;
+            background:#fc0;
+            border-radius: 50px;
+            position: absolute;
+        }
+        .top_circle {
+            bottom: -50px;
+            right: -50px;
+        }
+        .bottom_circle {
+            top: -50px;
+            left: -50px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="rectangle">
+        <div class="top_circle"></div>
+        <div class="bottom_circle"></div>
+    </div>
+</div>
+</body>
+</html>

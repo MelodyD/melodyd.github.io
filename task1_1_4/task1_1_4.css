@@ -1,0 +1,30 @@
+.top_circle,.bottom_circle{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background:#fc0;
+    border-radius: 50px;
+}
+.top_circle {
+    bottom: -50px;
+    right: -50px;
+}
+.bottom_circle {
+    top: -50px;
+    left: -50px;
+}
+.rectangle{
+    width: 400px;
+    height: 200px;
+    margin: -100px -200px -100px -200px;
+    position: absolute;
+    overflow: hidden;
+    background-color: #ccc;
+}
+.container{
+    width: 0px;
+    height:0px;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
