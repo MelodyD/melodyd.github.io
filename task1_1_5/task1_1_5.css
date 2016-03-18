@@ -12,7 +12,7 @@ body{
 .container{
     background-color: #ddd;
     overflow: auto;
-    position: absolute;
+    position: relative;
 
 }
 .left_content div{
