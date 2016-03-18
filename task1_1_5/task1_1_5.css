@@ -121,10 +121,6 @@ h3{
 }
 .form .info{
     text-align: right;
-    width: 70em;
-}
-.form .input{
-    width: 60em;
 }
 .form .remind{
     color: gray;
