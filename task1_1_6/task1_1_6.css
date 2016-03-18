@@ -10,7 +10,8 @@ body{
 }
 .newspaper{
     width: 892px;
-    height: 1300px;
+    height: 1386px;
+    min-width: 892px;
     padding-right: 44px;
     padding-left: 44px;
     margin: 50px;
@@ -243,7 +244,7 @@ font-family: "Microsoft YaHei";
     position: relative;
     background: url("p3.jpg");
     background-size:100% 100%;
-    margin: 0px auto;
+    margin: 0px auto 20px 19px;
 }
 .main3_top .picture3{
     z-index: 1;
@@ -274,52 +275,97 @@ font-family: "Microsoft YaHei";
     font-size: 26px;
     color: #ffffff;
 }
- .main3_content{
-     line-height: 40px;
-     font-family: SimSun;
- }
- .main3_content .main3_header{
-    font-size: 16px;
-     color:#5a5b5b;
-     text-align: left;
-     border: 1px solid black;
-     position: relative;
- }
+
  .main3_bottom{
-     width: 460px;
+     width: 458px;
+     margin-left: 19px;
      height: auto;
-     background-color: lightgreen;
+     background-color: #75b86b;
  }
+.main3_content{
+    line-height: 40px;
+    font-family: SimSun;
+}
+.main3_content .main3_header{
+    padding: 10px;
+    font-size: 16px;
+    color:#5a5b5b;
+    text-align: left;
+    position: relative;
+}
 .main3_content_right{
     position: absolute;
-    right: 0;
-    top: 0px;
+    right: 10px;
+    top: 5px;
     text-align: right;
+
 }
 .red_rectangle{
-    width: 250px;
-    height: auto;
-    background: indianred;
+    width: 260px;
+    background-color:#d45d5c;
     font-family: "Microsoft YaHei";
+    overflow: auto;
+    margin: 15px 15px 0 0;
     color: #ffffff;
-    display: inline-block;
+    float: left;
+
 }
 .big_0{
     font-size: 110px;
-    border: 2px solid #ffffff;
     float: left;
-    display: inline-block;
+
+}
+.one_two,.hello{
+    border-left: 2px solid  #ffffff;
+    float: left;
+    padding: 4px;
 }
 .one_two{
-    display: inline-block;
     font-size: 21px;
     line-height: 24px;
-    float: left;
+    margin-top: 30px;
+    font-style: italic;
 }
 .hello{
     width: 150px;
     font-size: 12px;
     font-family: SimHei;
-    line-height: 10px;
+}
+.last_word{
+    width: 170px;
+    height: 160px;
     float: left;
+    font-family: SimHei;
+    overflow: hidden;
+    position: relative;
+}
+.last_word p{
+    margin-top: 27px;
+    font-style: italic;
+    font-size: 14px;
+    text-indent: 35px;
+}
+.last_word>:first-child{
+    color: #d45d5c;
+    font-size: 72px;
+    float: left;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: -36px;
+}
+.last_word>:last-child{
+    color: #d45d5c;
+    font-size: 72px;
+    position: absolute;
+    right: -30px;
+    bottom:-25px;
+    float: right;
+}
+.footer{
+    color: #d45d5c;font-family: SimHei;
+    font-size: 12px;
+    margin-top: 20px;
+    text-align:right;
+    border-top: 2px solid #938e8c;
 }
