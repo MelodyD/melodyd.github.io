@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+        </title>
+        <style>
+            .queue{
+                background: red;
+                margin:0 2px 0 2px;
+                width: 30px;
+            }
+            #queue-content{
+                height: 500px;
+                margin: 10px;
+                background-color:#cccccc;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+            }
+            /*button{*/
+
+                /*background: white;*/
+                /*border-radius: 5px;*/
+            /*}*/
+        </style>
+    </head>
+    <body>
+        <input id="input-number" type="number">
+        <div id="input-options">
+            <button id="left-push" value="left-push">左侧入</button>
+            <button id="right-push" value="right-push">右侧入</button>
+            <button id="left-pop" value="left-pop">左侧出</button>
+            <button id="right-pop" value="right-pop">右侧出</button>
+            <button id="sort" value="sort">排序</button>
+            <button id="random" value="random">生成随机数</button>
+        </div>
+        <div id="queue-content"></div>
+        <script src="task1_19.js"></script>
+    </body>
+</html>
