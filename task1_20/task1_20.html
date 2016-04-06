@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>
+    </title>
+    <style>
+        body{
+            height:100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        button{
+            margin: 10px;
+            width: 100px;
+            height: 40px;
+            font-size: inherit;
+            font-family: SimHei;
+            background-color: #cccccc;
+            border-radius: 10px;
+        }
+        #seek-info{
+            display: inline;
+        }#queue-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+                 }
+        .queue{
+            width: auto;
+            height: 50px;
+            line-height: 50px;
+            padding: 10px;
+            background-color: cornflowerblue;
+            margin: 30px;
+        }
+    </style>
 </head>
 <body>
-
+<textarea id="text-area" rows="8" cols="50"></textarea>
+<div id="input-options">
+    <button id="left-push" value="left-push">左侧入</button>
+    <button id="right-push" value="right-push">右侧入</button>
+    <button id="left-pop" value="left-pop">左侧出</button>
+    <button id="right-pop" value="right-pop">右侧出</button>
+    <input id="seek-info" />
+    <button id="find" value="find">查询</button>
+</div>
+<div id="queue-content"></div>
+<script src="task1_20.js"></script>
 </body>
 </html>

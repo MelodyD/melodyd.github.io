@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            font-family: "Microsoft YaHei UI", sans-serif;
+            font-size: 50px;
+        }
+        input{
+            font-size: 40px;
+        }
+        .queue-content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+            color: white;
+            margin: 30px;
+        }
+        .queue-content span{
+            background-color: lightblue;
+            margin-right: 30px;
+        }
+        .rabbits-content span{
+            background-color: #d2994f;
+            margin-right: 30px;
+        }
+        .rabbits-content{
+            color: white;
+            margin: 30px;
+        }
+        button{
+            background-color: white;
+            border-radius: 5px;
+            display: block;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <label>Tag:</label><input id="input-info" class="input-info"/>
+    <div id="queue-content" class="queue-content">123</div>
+</div>
+<div>
+    <textarea id="text-area" rows="8" cols="50"></textarea>
+    <button id="add-rabbit">确认兴趣爱好</button>
+    <div id="rabbits-content" class="rabbits-content">123</div>
+</div>
+<script src="task1_21.js"></script>
+</body>
+</html>
